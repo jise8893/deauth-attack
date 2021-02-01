@@ -9,18 +9,7 @@ void usage(){
     std::cout<<"syntx : deauth-attack <interface> <ap mac>"<<std::endl;
     std::cout<<"sample : deauth-attack wlan0 00:11:22:33:44:55 66:77:88:99:AA:BB";
 }
-void hextomac(uint8_t * address){
 
-    unsigned char mac[6];
-    memcpy(mac,address,6);
-    for(int i=0 ; i<6; i++){
-        printf("%02x",mac[i]);
-        if(i!=5){
-            printf(":");
-        }
-    }
-
-}
 int main(int argc, char *argv[])
 {
     char *dev;
