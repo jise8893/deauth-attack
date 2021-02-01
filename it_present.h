@@ -21,6 +21,10 @@ struct It_present{
     uint8_t dB_Antenna_Signal:1;
     uint8_t dB_Antenna_Noise:1;
     uint8_t RX_flags:1;
+    uint8_t TX_flags:1;
+    uint8_t RTS:1;
+    uint8_t data_retries:1;
+    uint8_t XChannel:1;
     uint8_t Channel_:1;
     uint8_t MCS_information:1;
     uint8_t A_MPDU_Status:1;

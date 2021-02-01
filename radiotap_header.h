@@ -11,8 +11,6 @@ struct Radiotap_header{
     uint16_t it_len;
     uint32_t it_present;
     uint8_t rate;
-    uint8_t dummy_1;
-    uint8_t dummy_2;
-    uint8_t dummy_3;
+
 };
 #pragma pack(pop)
