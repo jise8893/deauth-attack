@@ -24,9 +24,8 @@ int main(int argc, char *argv[])
                     fprintf(stderr, "couldn't open device %s(%s)\n", dev, errbuf);
                     return -1;
                 }
-            deauth_packet.radiotap_header.it_len=9;
-            deauth_packet.radiotap_header.it_present=0x00000004;
-            deauth_packet.radiotap_header.rate=0x02;
+            deauth_packet.radiotap_header.it_len=8;
+            deauth_packet.radiotap_header.it_present=0x00000000;
             deauth_packet.dot11_frame.frame_control.protocol=0;
             deauth_packet.dot11_frame.frame_control.type=FrameControl::Type::Management;
             deauth_packet.dot11_frame.frame_control.subtype=FrameControl::Management::Deauthentication;
@@ -60,9 +59,8 @@ int main(int argc, char *argv[])
                     fprintf(stderr, "couldn't open device %s(%s)\n", dev, errbuf);
                     return -1;
                 }
-            deauth_packet.radiotap_header.it_len=9;
-            deauth_packet.radiotap_header.it_present=0x00000004;
-            deauth_packet.radiotap_header.rate=0x02;
+            deauth_packet.radiotap_header.it_len=8;
+            deauth_packet.radiotap_header.it_present=0x00000000;
             deauth_packet.dot11_frame.frame_control.protocol=0;
             deauth_packet.dot11_frame.frame_control.type=FrameControl::Type::Management;
             deauth_packet.dot11_frame.frame_control.subtype=FrameControl::Management::Deauthentication;
