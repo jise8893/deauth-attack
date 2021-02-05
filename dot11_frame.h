@@ -5,9 +5,9 @@
 #include "frame_control.h"
 #include "mac.h"
 #pragma pack(push,1)
-class Dot11_frame {
+class Dot11Frame {
 public:
-    Frame_control frame_control;//check frame to ds or from ds
+    FrameControl frame_control;//check frame to ds or from ds
     uint16_t duration_id;
     Mac address_1; //receiver address or destination
     Mac address_2; //transmitter or source address

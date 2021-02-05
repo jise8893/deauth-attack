@@ -5,7 +5,7 @@
 #include <cstdint>
 #pragma pack(push,1)
 
-struct It_present{
+struct ItPresent{
     uint8_t TSFT:1;
     uint8_t Flags:1;
     uint8_t Rate:1;

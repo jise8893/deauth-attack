@@ -5,7 +5,7 @@
 #include <cstdint>
 #include "it_present.h"
 #pragma pack(push,1)
-struct Radiotap_header{
+struct RadiotapHeader{
     uint8_t it_version=0;
     uint8_t it_pad=0;
     uint16_t it_len;

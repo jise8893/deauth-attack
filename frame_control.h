@@ -2,11 +2,11 @@
 #define FRAME_CONTROL_H
 
 #endif // FRAME_CONTROL_H
-#define management 0
+
 #include <cstdint>
 #include <string>
 #pragma pack(push,1)
-class Frame_control{
+class FrameControl{
 public:
     unsigned int protocol:2; //version fix 0
     unsigned int type:2; //control data type etc)management type ...
@@ -20,6 +20,9 @@ public:
     unsigned int protected_frame:1;
     unsigned int order:1;
 
+    enum Type{
+        Management=0,
+    };
 
     enum Management{
         Association_Request=0,
